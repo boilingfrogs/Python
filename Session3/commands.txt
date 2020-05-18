@@ -1,0 +1,132 @@
+>>>languages = ["python", 'go']
+>>>languages
+['python', 'go']
+>>>type(languages)
+<class 'list'>
+>>>len(languages)
+2
+>>>languages.append("java")
+>>>languages
+['python', 'go', 'java']
+>>>languages.insert(1, "perl")
+>>>languages
+['python', 'perl', 'go', 'java']
+>>>languages.remove("go")
+>>>languages
+['python', 'perl', 'java']
+>>>languages.remove("PERL")
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>>languages
+['python', 'perl', 'java']
+>>>languages.pop()
+'java'
+>>>languages
+['python', 'perl']
+>>>languages.append("scala")
+>>>languages.append("ruby")
+>>>languages
+['python', 'perl', 'scala', 'ruby']
+>>>languages.pop(1)
+'perl'
+>>>languages
+['python', 'scala', 'ruby']
+>>>languages
+['python', 'scala', 'ruby']
+>>>languages.append("C#")
+>>>languages.append("cpp")
+>>>languages
+['python', 'scala', 'ruby', 'C#', 'cpp']
+>>>languages[0]
+'python'
+>>>languages[-1]
+'cpp'
+>>>languages[1:4]
+['scala', 'ruby', 'C#']
+>>>languages
+['python', 'scala', 'ruby', 'C#', 'cpp']
+>>>languages.reverse()
+>>>languages
+['cpp', 'C#', 'ruby', 'scala', 'python']
+>>>languages.sort()
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala']
+>>>numlist = [100, 200, 300]
+>>>len(numlist)
+3
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala']
+>>>len(languages)
+5
+>>>languages.append(numlist)
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala', [100, 200, 300]]
+>>>len(languages)
+6
+>>>languages.extend(numlist)
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala', [100, 200, 300], 100, 200, 300]
+>>>len(languages)
+9
+>>>s = "BOILINGFROGS"
+>>>languages.append(s)
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala', [100, 200, 300], 100, 200, 300, 'BOILINGFROGS']
+>>>languages.extend(s)
+>>>languages
+['C#', 'cpp', 'python', 'ruby', 'scala', [100, 200, 300], 100, 200, 300, 'BOILINGFROGS', 'B', 'O', 'I', 'L', 'I', 'N', 'G', 'F', 'R', 'O', 'G', 'S']
+>>>numlist
+[100, 200, 300]
+>>>numlist[0] = "500"
+>>>numlist
+['500', 200, 300]
+>>>s
+'BOILINGFROGS'
+>>>s[0]
+'B'
+>>>s[0] = "Z"
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>>s[1]
+'O'
+>>>s[0]
+'B'
+>>>s
+'BOILINGFROGS'
+>>>s = "ZOILINGFROGS"
+>>>s
+'ZOILINGFROGS'
+>>>numlist
+['500', 200, 300]
+>>>numlist + 10
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+TypeError: can only concatenate list (not "int") to list
+>>>numlist + [10]
+['500', 200, 300, 10]
+>>>numlist
+['500', 200, 300]
+>>>s
+'ZOILINGFROGS'
+>>>s = "BOILINGFROGS"
+>>>s + 10
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+TypeError: must be str, not int
+>>>s * 3
+'BOILINGFROGSBOILINGFROGSBOILINGFROGS'
+>>>numlist
+['500', 200, 300]
+>>>numlist * 3
+['500', 200, 300, '500', 200, 300, '500', 200, 300]
+
